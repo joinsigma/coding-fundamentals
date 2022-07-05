@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=VT323&display=swap');
+
+/* Config in miliseconds */
+:root{
+    --game-speed: 0;
+    --jump-speed: 0;
+    --max-jump: 0;
+    --speed-scale: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'VT323', monospace;
+}
+
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+/* Game container */
+#game{
+    position: relative;
+    /* width: 1051px;
+    height: 384px; */
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.score{
+    position: absolute;
+    right: 0;
+    font-size: xxx-large;
+    color: #535353;
+}
+
+.messages{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: xx-large;
+    color: #535353;
+}
+
+.messages p{
+    display: none;
+}
+
+/* Before start game */
+.messages p:first-child{
+    display: block;
+}
+
+/* Once the game start */
+.game-started .messages p:first-child{
+    display: none;
+}
+
+/* Game over */
+.game-over .messages p:last-child{
+    display: block;
+}
+.ground{
+    position: absolute;
+    bottom: 0;
+    background-image: url(assets/images/ground.png);
+    background-repeat: repeat-x;
+    image-rendering: pixelated;
+    width: 7197px;
+    height: 24px;
+    /* animation: ground-animation calc(var(--game-speed) * 1ms) linear infinite; */
+}
+
+.game-started .ground{
+    animation: ground-animation calc(var(--game-speed) *1ms) linear infinite
+}
+
+.game-over .ground{
+    animation-play-state: paused;
+}
+
+@keyframes ground-animation {
+    0%{
+        left: 0;
+
+    }
+    100%{
+        left: -2399px;
+    }
+}
+
+.dino{
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    background-image: url(assets/images/dino/dino_initial.png);
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    width: 88px;
+    height: 94px;
+}
+
+.dino-jump{
+    animation: dino-jump-animation calc(var(--jump-speed) * 1ms) linear;
+
+}
+
+@keyframes dino-jump-animation{
+    0%{
+        transform: translate3d(0, 0, 0);
+        animation-timing-function: cubic-bezier(0.33333, 0.66667, 0.66667, 1);
+    }
+
+    50%{
+        transform: translate3d(0, calc(var(--max-jump) * -1%), 0);
+        animation-timing-function: cubic-bezier(0.33333, 0, 0.66667, 0.33333);
+
+    }
+    100%{
+        transform: translate3d(0, 0,0);
+    }
+}
+
+.cactus{
+    position: absolute;
+    bottom: 0;
+    left: 2000px;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
+
+.cactus-small-1{
+    background-image: url(assets/images/cacti/cacti_small_1.png);
+    height: 70px;
+    width: 34px;
+}
+
+.cactus-small-2{
+    background-image: url(assets/images/cacti/cacti_small_2.png);
+    height: 70px;
+    width: 68px;
+}
+
+.cactus-small-3{
+    background-image: url(assets/images/cacti/cacti_small_3.png);
+    height: 70px;
+    width: 102px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
