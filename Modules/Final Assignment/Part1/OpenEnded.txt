@@ -1,0 +1,107 @@
+1. Why do we need a loop? How do you write a basic for loop?
+
+Loop is a piece of code that executes its inner tasks or codes based on the
+condition. The condition return is usually in terms of true or false.
+The loop will iterate the codes within it as long as the condition is true,
+and it will stop iterating its inner codes when the condition is false.
+Given that nature, loop is important in completing the repetitive task for
+it not only reduces the program time to complete such tasks, but also 
+simplifies the structure of codes by eliminating any redundancy.
+
+For example, if we would like to calculate the sum of an array of number,
+without loop, we would have to write out every single elements of the
+array to do the summation line by line. On the contrary, by using loop,
+we can loop through every single element of the array and sum them up
+within the loop structure. This can be done with just a single line of
+code!
+
+To write a basic for loop, there are few concerns:
+Firstly, the 'for()' word and the initialisation of 'i' variable wiithin the 
+for (), by "let i = 0 ".
+
+Secondly, the (condition). The (condition) can be in form of (i<=a) or
+(i>=a), where the former checking if i variable is of smaller or equivalent 
+value as variable a and vice versa. This is important as it sets the limit
+of the condition.
+
+Thirdly, the increment or decerment or manipulation of variable i, such as
+i ++, i --, i * 2 etc.
+
+Fourthy, the codes within the for loop.
+
+The overall loop structure is shown below:
+ for ( let i = 0 ; i < = a ; i ++ ){
+	codes here
+ }
+
+
+--------------------------------------------------------------------------------------
+
+
+
+2. Difference between console.log() and return?
+
+console.log() displays the values within it to the terminal,
+but it will not pass any value to any variable or function.
+
+return will pass the values to any variable or function,
+but it will not display any value to the terminal.
+
+
+--------------------------------------------------------------------------------------
+
+
+
+3. What are truthy values? What are falsy values?
+
+Truthy values are any value that is considered as 'true'
+when they are defined in Boolean context. By default,
+all values are truthy, except some exception.
+
+The exception such as 0 , -0, null, "", undefined, NaN, false,
+empty sequences are falsy values. They are false when being 
+defined in Boolean context.
+
+
+--------------------------------------------------------------------------------------
+
+
+
+4. How does the internet work?
+
+Internet is formed by connections of computing and networking
+devices across the globe. In fact, all main connections are found 
+in undersea cables across the oceans of the Earth. Hence, the
+network connection as we have today is formed by those
+hundred of thousands kilometres of cables lying on the seabed. 
+
+Now, we will focus on discrete and smaller field of view. 
+Our PC or device is connected either wireless or in wire, to the modem or
+router. Router helps connect our devices to the networks of other region
+across the globe whereas modem connects our devices to the ISP. ISP is
+a company that manages special routers that can access other ISP's
+routers. Hence, our network, if connected to our local ISP, is
+technically connected to the networks of other ISP around the globe.
+This is how the network of whole world is connected.
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+5. How does a website work? What files are involved?
+
+When we type a URL of a website, our query will be pushed to ISP which connects
+to different servers that store and send data such as NAP server and
+DNS. Then, DNS will look up to the IP address through the domain name
+we have typed. Our browser will then sends a HTTP request to the server
+to send a copy of the client using TCP/IP protocol. The server approves
+the request and sends data packet of website files to the browser.
+Our browser then reassembles data packets and the website is loaded
+completely. This is how the internet works when we browsing a certain
+website.
+
+The files involved are the code files and the assets. The code files consist of
+HTML, CSS and Javascript. Assets file is a collective of other stuff that make
+up the website, such as images, videos, music, PDF etc.

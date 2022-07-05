@@ -1,0 +1,124 @@
+.cards{
+    /* border: 1px solid black; */
+    height: max-content;
+    margin: 2px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(251, 252, 253);
+}
+
+.card{
+    /* border: 1px solid black; */
+    height: max-content;
+    width: 200px;
+    margin: 10px;
+    /* flex-grow: 1; */
+    background-color: white;
+
+
+}
+.card:hover{
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    border: 2px solid rgb(255, 94, 0);
+}
+
+.upper__content{
+    /* border: 1px solid black; */
+    height: max-content;
+    width: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.image{
+    /* border: 1px solid black; */
+    height: 170px;
+    width: 200px;
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+  
+}
+
+.title{
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   margin: 4px;
+   font-size: 16px;
+   /* border: 1px solid rgb(255, 94, 0); */
+   text-align: left;
+
+}
+
+.tag{
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 4px;
+    font-size: 15px;
+    border: 1px solid rgb(255, 94, 0);
+    border-width: 1px;
+    color: rgb(255, 94, 0);;
+}
+
+.lower__content{
+    /* border: 1px solid black; */
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    flex-grow: 1;
+    margin-bottom: 3px;
+
+}
+
+.price{
+    font-size: smaller;
+  font-family: sans-serif;
+  color: rgb(255, 94, 0);
+}
+
+.ringgit{
+    font-size: medium;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.button{
+    border: transparent;
+    border-radius: 9px;
+    height: 40px;
+    width: 80px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    font-weight: bold;
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.upper__content:active{
+    opacity: 0.7;
+}
+
+a:active{
+    opacity: 0.7;
+}
+
+.button:active{
+    opacity: 0.1;
+}
