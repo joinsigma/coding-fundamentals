@@ -1,0 +1,256 @@
+nav {
+  display: flex;
+  border: 2px solid rgb(255, 92, 182);
+  justify-content: space-between;
+  margin: 0px 100px;
+  font-weight: 600;
+  background-color: rgb(255, 41, 112);
+}
+
+body > nav > div > img {
+  /* border: 2px solid red; */
+  padding: 10px 10px;
+  margin: 20px 10px;
+}
+
+.leftbuttons {
+  display: flex;
+  flex: 1 1 70%;
+
+  border: 2px solid green;
+}
+
+ul {
+  display: flex;
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: center;
+  border: 2px solid blue;
+  padding: 0px 10px;
+  margin: 10px 0px;
+}
+
+body > nav > div > ul > li {
+  margin: 20px 10px;
+  width: fit-content;
+  height: fit-content;
+  background: linear-gradient(to bottom, #ffffff 5%, #eafbff 100%);
+  background-color: #4580c7;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Courier New;
+  text-decoration: none;
+  padding: 5px 10px;
+  text-shadow: 0px 0px 0px #327fba;
+}
+
+a {
+  text-decoration: none;
+}
+
+body > nav > div > ul > li:hover {
+  background: linear-gradient(to bottom, #d7f4fc 5%, #deeaf8 100%);
+  background-color: #2aa0bd;
+}
+
+body > nav > div > li > a:active {
+  position: relative;
+  top: 1px;
+}
+
+.rightbuttons {
+  display: flex;
+  flex: 1 1 30%;
+  justify-content: end;
+  border: 2px solid blue;
+}
+
+/* ------------------------ */
+/* Header start here */
+/* ------------------------ */
+
+header {
+  display: flex;
+  border: 2px solid rgb(255, 92, 182);
+  justify-content: space-between;
+  margin: 0px 100px;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+}
+
+.firsthead {
+  border: 2px solid blue;
+  padding: 30px 30px;
+  /* flex: 1 1 60; */
+}
+
+.secondhead {
+  border: 2px solid blue;
+  padding: 30px 30px;
+  /* flex: 1 1 40; */
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+body > head > header > div > img {
+  width: 100%;
+}
+
+/* ------------------------------ */
+/* Contact form starts here */
+/* ------------------------------ */
+
+.contact {
+  display: flex;
+  border: 2px solid rgb(255, 92, 182);
+  justify-content: start;
+  margin: 10px 100px;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+}
+
+.info {
+  border: 2px solid blue;
+  background-color: antiquewhite;
+  flex: 1 1 30;
+  padding: 0px 30px;
+  height: auto;
+  min-width: 400px;
+  font-size: large;
+}
+
+.fill {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+  min-width: 600px;
+  flex: 1 1 70;
+}
+
+figure {
+  background-color: #ffffff;
+  margin: 10px 0px;
+  display: flex;
+  width: fit-content;
+  border-radius: 19px;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+figure:hover {
+  background: linear-gradient(to bottom, #d7f4fc 5%, #deeaf8 100%);
+  background-color: #2aa0bd;
+  opacity: 0.7;
+}
+
+figure:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background-color: blue;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: rgb(247, 85, 112);
+  color: white;
+}
+
+.row1{
+  border: 2px solid blue;
+  padding: 0px 30px;
+
+}
+
+form{
+  border: 2px solid blue;
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form > div{
+  padding: 0px 30px;
+  margin: 10px 0px;
+}
+
+input[type=text], input[type=number], input[type=email] {
+  width: 100%;
+  padding: 10px 24px;
+  margin-right: 20px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 0px;
+  padding-left: 24px;
+  margin-right: 20px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+button {
+  margin: 20px 10px;
+  width: fit-content;
+  height: fit-content;
+  background: linear-gradient(to bottom, #ffffff 5%, #eafbff 100%);
+  background-color: #4580c7;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  color: black;
+  font-family: Courier New;
+  text-decoration: none;
+  padding: 5px 10px;
+  text-shadow: 0px 0px 0px #327fba;
+}
+
+button {
+  text-decoration: none;
+  margin-left: 550px;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #d7f4fc 5%, #deeaf8 100%);
+  background-color: #2aa0bd;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
