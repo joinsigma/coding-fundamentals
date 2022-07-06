@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(207, 235, 225);
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(241, 241, 232);
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+.button>*{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.button>*:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+.icon>*{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon>*:hover{
+    opacity: 0.5;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 30px;
+}

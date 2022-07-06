@@ -1,0 +1,121 @@
+body {
+  padding: 0 15px;
+}
+
+.header {
+  /* border: 1px solid black; */
+  color: white;
+  background-color: #212529;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: small;
+  height: 35px;
+  padding: 5px 15px 20px 15px;
+}
+
+.title:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+
+.feed {
+  /* border: 1px solid black; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.content {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+}
+
+.card {
+  /* box-sizing: content-box; */
+  border: 1px solid #b5b7b9;
+  border-radius: 4px;
+  color: #171a1d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height:100%;
+}
+
+.img__container {
+  display: flex;
+  /* border: 1px solid black; */
+  flex-wrap: wrap;
+
+  height: 300px;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+
+  /* border: 1px solid black; */
+}
+
+.nonimg__container {
+  /* border: 1px solid black; */
+  height: max-content;
+  margin: 0 20px;
+  flex-grow: 1;
+}
+
+.button {
+  border: 1px solid transparent;
+  margin-top: 0;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #3f464e;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #171a1d;
+}
+
+.button > a {
+  color: white;
+  font-size: larger;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+.button > a:hover {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 650px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-auto-rows: 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    height: 100%;
+ 
+  }
+}
+

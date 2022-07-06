@@ -1,0 +1,44 @@
+.container {
+  border: 1px solid black;
+  width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: azure;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.upper-left {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upper-right > * {
+  padding: 0%;
+  margin: 5px 0;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+.review {
+  margin: 15px;  
+}

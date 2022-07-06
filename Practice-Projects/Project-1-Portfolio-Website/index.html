@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/home.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/about.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/experience.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/project.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/contact.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./Practice Project 1 - Portfolio Website/style/footer.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo__container">
+        <a href="#">
+          <svg
+            class="user__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <button class="mobile__navigation">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu__icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
+      <nav class="navigation__container">
+        <ol class="navigation__links">
+          <li class="link__item">
+            <span class="highlight">01.</span>
+            <a class="link__name underline" href="/portfolio-website/#about"
+              >About</a
+            >
+          </li>
+          <li class="link__item">
+            <span class="highlight">02.</span>
+            <a
+              class="link__name underline"
+              href="/portfolio-website/#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="link__item">
+            <span class="highlight">03.</span>
+            <a class="link__name underline" href="/portfolio-website/#project"
+              >Project</a
+            >
+          </li>
+          <li class="link__item">
+            <span class="highlight">04.</span>
+            <a class="link__name underline" href="/portfolio-website/#contact"
+              >Contact</a
+            >
+          </li>
+        </ol>
+
+        <div>
+          <a class="resume__link" href="portfolio-website/resume.pdf">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="home__section">
+        <h4 class="home__title highlight">Hi, my name is</h4>
+        <h2 class="home__username">Lim Jun Hao</h2>
+        <h3 class="home__subtitle">I build things</h3>
+
+        <p class="home__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          facere, officia ipsa quibusdam earum debitis aperiam odit maiores
+          autem vitae ipsum ex recusandae, totam qui explicabo. Aspernatur eaque
+          cumque ut?
+        </p>
+
+        <div class="home__cta">
+          <a class="cta__link" href="/portfoliowebsite/#contact">Contact me!</a>
+        </div>
+      </section>
+
+      <section id="about" class="about__section">
+        <h2 class="about__title">
+          <span>01.</span>
+          About Me
+        </h2>
+
+        <div class="about__container">
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                Hello! My name is Yap Yee Qiang and I enjoy sharing knowledge
+                and exploring the beauty of technology. My interest in
+                programming started back in 2019 when I decided to try self
+                taught myself Python, and eventually explore into the world of
+                Web Development.
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deserunt, numquam!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, id.
+              </p>
+            </div>
+            <ul class="about__tech">
+              <li>Javascript</li>
+              <li>Typescript</li>
+              <li>Vue</li>
+              <li>Node.js</li>
+              <li>Tailwind</li>
+              <li>GraphQL</li>
+              <li>AWS</li>
+              <li>Google Cloud</li>
+            </ul>
+          </div>
+
+          <div class="about__image">
+            <img
+              src="/Practice Project 1 - Portfolio Website/assets/profile photo.png"
+              alt="Profile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience__section">
+        <h2 class="experience__title">
+          <span>02.</span>
+          Where I've Worked
+        </h2>
+
+        <div class="experience__container">
+          <div class="experience__card">
+            <h3 class="experience__role">
+              <span
+                >Software Developer @
+                <a class="experience__company underline" href="#"
+                  >Hacker Collective</a
+                >
+              </span>
+            </h3>
+
+            <p class="experience__date">July 2021 - Present</p>
+
+            <ul class="experience__about">
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, nostrum.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                odit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Libero, laboriosam?
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience__card">
+            <h3 class="experience__role">
+              <span
+                >Software Developer @
+                <a class="experience__company underline" href="#"
+                  >Hacker Collective</a
+                >
+              </span>
+            </h3>
+
+            <p class="experience__date">July 2021 - Present</p>
+
+            <ul class="experience__about">
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, nostrum.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                odit.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Libero, laboriosam?
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="project" class="project__section">
+        <h2 class="project__title">
+          <span>03.</span>
+          Some Things I've Built
+        </h2>
+
+        <div class="project__cards">
+          <div class="project__card">
+            <div class="proj__container">
+              <p class="highlight">Featured Project</p>
+              <h3 class="proj__title">WhatsApp Sender</h3>
+              <p class="proj__description">
+                WhatsApp messages bulk sender using Python and Selenium.
+              </p>
+
+              <ul class="proj__tech">
+                <li>Python</li>
+                <li>Selenium</li>
+                <li>WhatsApp</li>
+                <li>Automation</li>
+              </ul>
+
+              <div class="proj__links">
+                <a
+                  href="https://github.com/joinsigma/portfolio-website/blob/main/styles/experience.css"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 hover:text-[var(--primary-green)] transition-all duration-150"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="proj__image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITASIQstp1IZatUNyRuB3I4jAuh1dDQV0gg&usqp=CAU"
+                alt="whatsapp"
+              />
+            </div>
+          </div>
+
+          <div class="project__card">
+            <div class="proj__container">
+              <p class="highlight">Featured Project</p>
+              <h3 class="proj__title">WhatsApp Sender</h3>
+              <p class="proj__description">
+                WhatsApp messages bulk sender using Python and Selenium.
+              </p>
+
+              <ul class="proj__tech">
+                <li>Python</li>
+                <li>Selenium</li>
+                <li>WhatsApp</li>
+                <li>Automation</li>
+              </ul>
+
+              <div class="proj__links">
+                <a
+                  href="https://github.com/joinsigma/portfolio-website/blob/main/styles/experience.css"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 hover:text-[var(--primary-green)] transition-all duration-150"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="proj__image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITASIQstp1IZatUNyRuB3I4jAuh1dDQV0gg&usqp=CAU"
+                alt="whatsapp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact__section">
+        <h2 class="contact__title">
+          <span>04.</span>
+          What's Next?
+        </h2>
+
+        <div class="contact__container">
+          <div class="contact__content">
+            <h3>Get In Touch</h3>
+            <p>
+              Although I’m not currently looking for any new opportunities, my
+              inbox is always open. Whether you have a question or just want to
+              say hi, I’ll try my best to get back to you!
+            </p>
+          </div>
+
+          <div class="contact__cta">
+            <a href="#">Say Hello</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer__container">
+        <ul class="footer__socials">
+            <li class="social__item">
+                <a href="#" class="social__link"><svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                </svg></a>
+            </li>
+
+            <li class="social__item">
+                <a href="#" class="social__link"><svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                </svg></a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="social__icon" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z" style="fill-rule:nonzero;"/></svg></a>
+            </li>
+        </ul>
+
+        <div>
+            <small>Designed & Built by Lim Jun Hao</small>
+    </footer>
+  </body>
+</html>

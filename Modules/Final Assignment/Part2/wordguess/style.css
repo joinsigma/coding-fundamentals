@@ -1,0 +1,131 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.word__container {
+  margin-top: 70px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #00539cff;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  width: 70px;
+  background-color: #00539cff;
+  height: 60px;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.word__box {
+  color: rgb(0, 156, 122);
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 80px;
+}
+
+.letter__box {
+  color: rgb(0, 156, 122);
+  text-align: center;
+  font-size: 2rem;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.alphabet {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding: 5px;
+  box-shadow: 1px 1px 3px 1px black;
+  height: 30px;
+  width: 30px;
+}
+
+.alphabet:hover {
+  cursor: pointer;
+  background-color: rgb(171, 235, 235);
+}
+
+.alphabet:active {
+  cursor: pointer;
+  background-color: rgb(22, 163, 163);
+}
+
+.clicked {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
+
+.win {
+  background-color: aliceblue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20vw;
+  margin-top: -15vh;
+  border: solid 1px;
+  padding: 10px;
+  width: 40vw;
+  text-align: center;
+  transition-duration: 0.5;
+  display: none;
+}
+
+.lose {
+  background-color: aliceblue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20vw;
+  margin-top: -15vh;
+  border: solid 1px;
+  padding: 10px;
+  width: 40vw;
+  text-align: center;
+  transition-duration: 0.5;
+  display: none;
+}
+
+.view {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  li {
+    font: 0.8rem;
+  }
+}
