@@ -1,0 +1,53 @@
+@media (min-width: 0px) {
+    .tablet, .desktop {
+        display: none;
+    }
+
+    body {
+        background-color: red;
+    }
+
+    /* 
+      - show mobile div
+      - hide tablet and desktop divs
+    */
+  }
+  
+@media (min-width: 640px) {
+    .tablet {
+        display: block;
+    }    
+    
+    .mobile, .desktop {
+        display: none;
+    }
+
+    body {
+        background-color: lightgreen;
+    }
+    /*
+      - show tablet div
+      - hide mobile and desktop divs
+      - change background color
+    */
+  }
+  
+@media (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+    
+    .mobile, .tablet {
+        display: none;
+    }
+    
+    body {
+        background-color: blue;
+        color: white;
+    }
+    /*
+      - show desktop div
+      - hide mobile and tablet divs
+      - change background color
+    */
+  }
