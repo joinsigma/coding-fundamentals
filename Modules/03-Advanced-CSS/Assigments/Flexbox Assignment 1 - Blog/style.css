@@ -1,0 +1,86 @@
+body {
+    height: 150vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+header .blogcontent {
+    color: white;
+    margin: 2rem;
+}
+
+header .imagediv {
+    flex-grow: 1;
+    text-align: right;
+    align-self: center;
+}
+
+header .imagediv img {
+    height: 15rem;
+    border-radius: 10px;
+}
+
+/*Blog cards  */
+main {
+    display: flex;
+}
+
+main div {
+    border: 1px solid black;
+    margin: 5px;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+main div .category {
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 5px;
+    padding: 5px;
+    width: 4rem;
+    color: white;
+    background-color: rgb(112, 50, 219);
+    border-radius: 20px;
+}
+
+main div img.profile {
+    height: 15rem;
+    width: 100%;
+}
+
+main div .author {
+    position: relative;
+    bottom: 1rem;
+}
+
+/* To align the date to the right. Not a perfect solution */
+main .datediv {
+    border: none;
+    width: 67%;
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    bottom: 1rem;
+}
+
+
+@media (max-width: 1220px) {
+    header, main {
+        flex-direction: column;
+    }
+
+    main {
+        align-items: center;
+    }
+
+    main div img.profile {
+        height: 20rem;
+        width: 30rem;
+    }
+}
