@@ -1,0 +1,60 @@
+.reviewspace {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.reviewcard {
+    height: 200px;
+    width: 800px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+.reviewer {
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.review {
+    margin: 10px;
+}
+
+
+.stars {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 130px;
+}
+
+.checked {
+    color: rgb(237, 187, 38);
+}
+
+.container {
+    display: inline-block;
+    margin: 10px 10px;   
+    height: 100px;
+    width: 100px;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+@media (max-width: 900px) {
+    .reviewcard {
+        width: 90%;
+    }
+}
