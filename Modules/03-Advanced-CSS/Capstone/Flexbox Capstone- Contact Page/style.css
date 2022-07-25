@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* navbar */
+
+nav {
+    display: flex;    
+    align-items: center;
+    padding-left: 1rem;
+    background-color: rgb(248, 247, 247);
+    margin-bottom: 0;
+}
+
+.logo {
+    font-size: 3rem;
+    background-color: rgb(75, 177, 75);
+}
+
+ul.navlinks li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+ul.navlinks li a {
+    color: rgb(53, 42, 42);
+    text-decoration: none;
+}
+
+div.login {
+    display: flex;
+    flex-grow: 0.98;
+    justify-content: flex-end;
+}
+
+div.login a {
+    color: rgb(53, 42, 42);
+    text-decoration: none;
+    background-color: rgb(233, 224, 224);
+    padding: 0.5rem 1rem;
+
+    border-radius: 5px;
+}
+
+/* header */
+
+header {
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: rgb(209, 230, 230);
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+header div {  
+    max-width: 70%;
+}
+
+header div p {
+    margin-bottom: 0;
+}
+
+/*main contact form  */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Information */
+section.contact {
+    padding-left: 1rem;
+    background-color: rgb(63, 160, 147);
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+}
+
+section.contact div {
+    margin-top: 1rem;
+    max-width: 90%;
+}
+
+.phone, .mail {
+    font-size: 1.2rem;
+    width: 2rem;
+}
+
+ul.sociallinks {
+    margin-top: 0;
+    padding: 0;
+}
+
+ul.sociallinks li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+
+ul.sociallinks li a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+/* Contact Form */
+section.contactform {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+form div {
+    margin: 1rem;
+}
+
+
+.formrow {
+    display: flex;
+}
+
+.formdiv, input, textarea {
+    width: 100%;
+}
+
+input {
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+textarea {
+    margin-top: 0.5rem;    
+}
+
+.subdiv {
+    position: relative;
+}
+
+.subdiv span {
+    position: absolute;
+    right: 0px;
+    font-weight: 400;
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.buttonrow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(72, 171, 158);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+    }
+
+    section.contact h1 {
+        margin-top: 2rem;
+    }
+
+    section.contact {
+        width: 35%;
+    }
+
+    section.contactform {
+        width: 65%;
+    }
+}
+
+@media (max-width: 380px) {
+    .formrow {
+        flex-direction: column;
+    }
+
+    .formdiv {
+        width: 90%;
+    }
+}

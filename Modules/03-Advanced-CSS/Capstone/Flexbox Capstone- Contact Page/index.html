@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d727699103.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <i class="fa-brands fa-black-tie logo"></i>
+        <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="login">
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <header>
+        <div>
+            <h1>Get in touch</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta iure ex expedita officiis ducimus error
+                omnis eius harum velit distinctio. Saepe sequi vel rerum velit ratione suscipit architecto commodi
+                aliquid.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div>
+                <h1>Contact Information</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis consequuntur dolore aspernatur nisi
+                    perferendis accusamus facere, illum minus molestias sunt? At sit vitae veritatis molestias maxime
+                    fuga
+                    corporis distinctio commodi.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-mobile-screen phone"></i>
+                <span>012-3456789</span>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-envelope mail"></i>
+                <span>logo@gmail.com</span>
+            </div>
+
+            <div>
+                <ul class="sociallinks">
+                    <li><a class="fa-brands fa-facebook" href="#"></a></li>
+                    <li><a class="fa-brands fa-github" href="#"></a></li>
+                    <li><a class="fa-brands fa-twitter" href="#"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contactform">
+            <form action="#" method="get">
+                <div class="formrow">
+                    <div class="formdiv">
+                        <h1>Send us a message</h1>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="formdiv">
+                        <label for="firstname">First Name</label><br>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+
+                    <div class="formdiv">
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                </div>
+
+                <div class="formrow">
+                    <div class="formdiv">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="formdiv subdiv">
+                        <label for="phone">Phone</label><span>Optional</span><br>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="formdiv">
+                        <label for="subject">Subject</label><br>
+                        <input type="text" name="subject" id="subject" required>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="formdiv subdiv">
+                        <label for="message">Message</label><span>Max. 500 characters</span><br>
+                        <textarea name="messsage" id="message" rows="7" maxlength="500" required></textarea>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="formdiv buttonrow">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
