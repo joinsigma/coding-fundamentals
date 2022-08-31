@@ -1,0 +1,108 @@
+/* Setting up custom CSS variables */
+
+:root {
+    --primary-green: #64ffda;
+    --secondary-gray: #ccd6f6;
+
+    /* font sizes */
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+}
+
+#home {
+    scroll-margin-top: 10rem;
+}
+
+#about {
+    scroll-margin-top: 10rem;
+}
+
+#experience {
+    scroll-margin-top: 10rem;
+}
+
+#work {
+    scroll-margin-top: 10rem;
+}
+
+#contact {
+    scroll-margin-top: 10rem;
+}
+
+/* General Styles */
+
+html {
+    font-family: system-ui;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a192f;
+    color: #8892b0;
+}
+
+/* Remove default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.highlight {
+    color: var(--primary-green);
+}
+
+
+/* Creates the underline effect for the navigation links */
+.underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(var(--primary-green), var(--primary-green));
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s;
+}
+
+.underline:hover {
+    background-size: 100% 2px;
+}
+
+/* Layout */
+main {
+    max-width: 24rem;
+    margin: auto;
+}
+
+/* If don't set the max-width at varying sizes, then it will always stay in the center */
+@media (min-width: 640px) {
+    main {
+        max-width: 32rem;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: 42rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 48rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    main {
+        max-width: 64rem;
+    }
+}

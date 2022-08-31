@@ -1,0 +1,114 @@
+.work__section {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12rem;
+}
+
+.work__title {
+    color: var(--secondary-gray);
+    font-weight: 600;
+}
+
+.work__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.work__card {
+    position: relative;
+    border-radius: 0.25rem;
+    transition: 0.3s;
+}
+
+.work__card:hover {
+    transform: scale(1.05); 
+}
+
+/* To make the link clickable over the whole work card */
+.work__link {
+    position: absolute;
+    inset: 0;   
+}
+
+.project__container {
+    padding: 2.5rem 2.5rem 2rem;
+}
+
+.project__title {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    color: var(--secondary-gray);
+    text-decoration: none;
+    position: relative;
+    z-index: 10;
+}
+
+.project__description {
+    padding: 1.25rem 0;
+}
+
+.project__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--text-sm);
+    font-weight: 300;
+    margin: 0.625rem 0;
+}
+
+.project__technologies > li {
+    list-style-type: none;
+    margin: 0 0.625rem 0.25rem 0;
+}
+
+.project__links {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.project__links > a {
+    height: 1.25rem;
+    width: 1.25rem;
+    z-index: 10;
+    color: var(--secondary-gray);
+}
+
+.project__links > a:hover {
+    color: var(--primary-green);
+}
+
+.project__image {
+    position: absolute;
+    inset: 0;
+    opacity: 10%;
+}
+
+.project__image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 640px) {
+    .work__title {
+        font-size: var(--text-3xl);
+    }
+}
+
+@media (min-width: 768px) {
+    .work__title {
+        font-size: var(--text-4xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    .work__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+

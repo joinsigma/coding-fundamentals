@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    padding: 2rem 2.5rem;
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+    background-color: #0a192f;
+}
+
+.logo__container {
+    flex: 1;
+}
+
+.user__icon {
+    height: 3rem;
+    width: 3rem;
+    color: var(--primary-green);
+}
+
+.mobile__navigation {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--primary-green);
+}
+
+.navigation__container {
+    display: none;
+    align-items: center;
+}
+
+.navigation__links {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+    list-style-type: none;
+}
+
+/* Selects only li elements that appear after its previous li sibling */
+.navigation__links > * + * {
+    margin-left: 2.5rem;
+}
+
+.link__name {
+    color: var(--secondary-gray);
+    text-decoration: none;
+}
+
+.link__name:hover {
+    color: var(--primary-green);
+}
+
+.resume__link {
+    color: var(--primary-green);
+    text-decoration: none;
+    border: 1px solid var(--primary-green);
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+}
+
+.resume__link:hover {
+    color: #0a192f;
+    background-color: var(--primary-green);
+    transition: all 0.2s;
+}
+
+@media (min-width: 768px) {
+    .navigation__container {
+        display: flex;
+    }
+
+    .mobile__navigation {
+        display: none;
+    }
+}

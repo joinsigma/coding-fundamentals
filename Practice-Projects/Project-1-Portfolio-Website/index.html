@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo__container">
+            <a href="#home">
+                <!-- From HeroIcon website -->
+                <svg class="user__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </a>
+        </div>
+
+        <button class="mobile__navigation">
+            <!-- From HeroIcon website -->
+            <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <nav class="navigation__container">
+            <ol class="navigation__links">
+                <li class="link__item">
+                    <a class="link__name underline" href="#about">About</a>
+                </li>
+                <li class="link__item">
+                    <a class="link__name underline" href="#experience">Experience</a>
+                </li>
+                <li class="link__item">
+                    <a class="link__name underline" href="#work">Work</a>
+                </li>
+                <li class="link__item">
+                    <a class="link__name underline" href="#contact">Contact</a>
+                </li>
+            </ol>
+
+            <div>
+                <a class="resume__link" href="#">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home__section">
+            <h4 class="home__title">Hi, my name is</h4>
+            <h2 class="home__username">Jaden</h2>
+            <h3 class="home__subtitle">I build things for the web.</h3>
+
+            <p class="home__description">
+                A <span class="highlight underline">tech enthusiast</span> who enjoys developing websites, the process
+                of learning, and solving problems. <br><br> My goal
+                is to become a <span class="highlight underline">full-stack developer</span> and be part of a team that
+                develops great products!
+            </p>
+
+            <div class="home__cta">
+                <a class="cta__link" href="#contact">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="about" class="about__section">
+            <h2 class="about__title">
+                About Me
+            </h2>
+
+            <div class="about__container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>Hello! My name is <span class="highlight">Jaden</span> and I enjoy sharing
+                            knowledge and exploring technology. My interest in programming started back in 2019 when I
+                            decided to try self teach myself Web Development through a Udemy course.</p>
+
+                        <p>Fast-forward to today, I have built several projects, including an
+                            <span class="highlight">E-commerce platform</span>, <span class="highlight">a
+                                logistic company dashboard</span>, and <span class="highlight">a site generation
+                                tool</span>. My main
+                            focus
+                            these days is building projects and continue learning more about web development.
+                        </p>
+
+                        <p>Here are a few technologies I have been working with recently:</p>
+                    </div>
+
+                    <ul class="about__technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TailwindCSS</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="about__image">
+                    <img src="assets/Profile picture.PNG" alt="Profile">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience__section">
+            <h2 class="experience__title">
+                Where I've Worked
+            </h2>
+
+            <div class="experience__container">
+                <div class="experience__card">
+                    <h3 class="experience__role">
+                        <span>(Example) Software Developer</span>
+                        @
+                        <span>
+                            <a class="highlight underline experience__company" href="https://www.google.com/">
+                                Google
+                            </a>
+                        </span>
+                    </h3>
+
+                    <p class="experience__date">July 2021 - Present</p>
+
+                    <ul class="experience__about">
+                        <li>Write modern, performant, maintainable code for a diverse array of projects.</li>
+                        <li>Work with a variety of different languages, platforms, frameworks, and plugins such as
+                            JavaScript, Vue, Tailwind, AWS, Stripe.</li>
+                        <li>Communicate with multi-disciplinary teams of developers, designers, product manager, and
+                            clients.</li>
+                    </ul>
+                </div>
+
+                <div class="experience__card">
+                    <h3 class="experience__role">
+                        <span>(Example) Software Developer</span>
+                        @
+                        <span>
+                            <a class="highlight underline experience__company" href="https://www.google.com/">
+                                Google
+                            </a>
+                        </span>
+                    </h3>
+
+                    <p class="experience__date">July 2021 - Present</p>
+
+                    <ul class="experience__about">
+                        <li>Write modern, performant, maintainable code for a diverse array of projects.</li>
+                        <li>Work with a variety of different languages, platforms, frameworks, and plugins such as
+                            JavaScript, Vue, Tailwind, AWS, Stripe.</li>
+                        <li>Communicate with multi-disciplinary teams of developers, designers, product manager, and
+                            clients.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="work" class="work__section">
+            <h2 class="work__title">
+                Some Things I've Built
+            </h2>
+
+            <div class="work__cards">
+                <div class="work__card">
+                    <div class="project__container">
+                        <p class="highlight">Featured Project</p>
+                        <a class="project__title" href="#">Contact Page</a>
+                        <p class="project__description">Simple contact page built using HTML and CSS.</p>
+
+                        <ul class="project__technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+
+                        <div class="project__links">
+                            <a href="https://github.com/jadenc955/Projects">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__image">
+                        <img src="assets/Contact Page.PNG" alt="">
+                    </div>
+                    <a class="work__link" href="#"></a>
+                </div>
+                <div class="work__card">
+                    <div class="project__container">
+                        <p class="highlight">Featured Project</p>
+                        <a class="project__title" href="#">Contact Page</a>
+                        <p class="project__description">Simple contact page built using HTML and CSS.</p>
+
+                        <ul class="project__technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+
+                        <div class="project__links">
+                            <a href="https://github.com/jadenc955/Projects">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__image">
+                        <img src="assets/Contact Page.PNG" alt="">
+                    </div>
+                    <a class="work__link" href="#"></a>
+                </div>
+                <div class="work__card">
+                    <div class="project__container">
+                        <p class="highlight">Featured Project</p>
+                        <a class="project__title" href="#">Contact Page</a>
+                        <p class="project__description">Simple contact page built using HTML and CSS.</p>
+
+                        <ul class="project__technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+
+                        <div class="project__links">
+                            <a href="https://github.com/jadenc955/Projects">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__image">
+                        <img src="assets/Contact Page.PNG" alt="">
+                    </div>
+                    <a class="work__link" href="#"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact__section">
+            <h2 class="contact__title">
+                What's Next?
+            </h2>
+
+            <div class="contact__container">
+                <div class="contact__content">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to contact me if you have any questions or just want to connect, my inbox is always
+                        open and I'll try my best to get back to you! </p>
+                </div>
+                <div class="contact__cta">
+                    <a href="mailto:wjchew95@gmail.com">Say Hello</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__container">
+        <ul class="footer__socials">
+            <li class="social__item">
+                <a class="social__link" href="#">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>GitHub</title>
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="#">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>Twitter</title>
+                        <path
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link" href="#">
+                    <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <title>LinkedIn</title>
+                        <path
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <div>
+            <small>Designed & Built by Jaden</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
