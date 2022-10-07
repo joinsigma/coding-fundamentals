@@ -1,0 +1,107 @@
+:root{
+    --primary-green: #64ffda;
+    --secondary-gray: #ccd6f6;
+
+    /* font sizes */
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+}
+
+
+/* General Styles */
+html{
+    font-family: system-ui;
+}
+
+body{
+    background-color: #0a192f;
+    color: #8892b0;
+}
+
+.highlight{
+    color: var(--primary-green);
+}
+
+.underline{
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(var(--primary-green), var(--primary-green));
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+}
+
+.underline:hover{
+    background-size: 100% 2px;
+    background-position: 0 100%;
+
+}
+
+/* Layout */
+main{
+    max-width: 24rem;
+    margin: 0 auto;
+}
+
+/* section {
+    scroll-snap-align: center;
+} */
+
+
+/* Remove Default Style */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Medium */
+@media (min-width: 640px){
+    main {
+        max-width: 32rem;
+    }
+    
+}
+
+@media (min-width: 768px){
+    main {
+        min-width: 42rem;
+    }
+
+}
+
+/* Large */
+/* @media (min-width:768px){
+    main{
+        max-width: 42rem;
+    }
+    
+} */
+
+/* XL */
+@media (min-width:1024px){
+    main{
+        min-width: 48rem;
+    }
+    
+}
+
+/* 2XL */
+@media (min-width:1280px){
+    main{
+        min-width: 64rem;
+    }
+    
+}
+
+/* main{
+    border: 2px solid white;
+} */

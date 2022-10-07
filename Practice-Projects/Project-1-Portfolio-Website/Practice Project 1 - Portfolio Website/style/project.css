@@ -1,0 +1,148 @@
+.project__section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* margin-top: 15rem; */
+    
+}
+
+.project__title{
+    display: flex;
+    align-items: center;
+    color: var(--secondary-gray);
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+.project__title > span{
+    color: var(--primary-green);
+    font-size: var(--text-base);
+    padding-right: 1rem;
+}
+
+
+
+.project__cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+
+
+.project__card{
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    margin-top: 2.5rem;
+}
+
+.proj__container{
+    padding: 2.5rem 2.5rem 2rem;
+}
+
+.proj__title{
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    color: var(--secondary-gray);
+}
+
+.proj__description{
+    padding: 1.25rem 0;
+}
+
+.proj__tech{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--text-sm);
+    font-weight: 300;
+    margin: 0.625rem 0;
+}
+
+.proj__tech > li{
+    list-style-type: none;
+    margin: 0 0.625rem 0.25rem 0;
+}
+
+.proj__links{
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.proj__links > a{
+    height: 1.25rem;
+    width: 1.25rem;
+    z-index: 10;
+    color: var(--secondary-gray);
+}
+
+.proj__links > a:hover{
+    color: var(--primary-green);
+}
+
+.proj__image{
+    position: absolute;
+    inset: 0;
+    opacity: 10%;
+}
+
+.proj__image > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:640px){
+    .project__title{
+        font-size: var(--text-2xl);
+    }
+    
+    .project__title > span{
+        font-size: var(--text-lg);
+    }
+
+    /* .project__section{
+        margin-top: 16rem;
+    } */
+
+}
+
+@media (min-width:768px){
+    .project__title{
+        font-size: var(--text-3xl);
+    }
+    
+    .project__title > span{
+        font-size: var(--text-xl);
+    }
+
+    /* .project__section{
+        margin-top: 6.5rem;
+    } */
+
+}
+
+@media (min-width:1024px){
+    .project__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    /* .project__section{
+        margin-top: 3rem;
+    } */
+    
+
+}
+
+@media (min-width:1280px){
+
+    .experience__section{
+        margin-top: 0rem;
+    }
+    
+
+}

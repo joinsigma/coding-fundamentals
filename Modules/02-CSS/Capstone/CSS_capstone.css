@@ -1,0 +1,64 @@
+body {
+    /* set default background color */
+  }
+  
+  @media (min-width: 0px) and (max-width:639px) {
+    /* 
+      - show mobile div
+      - hide tablet and desktop divs
+    */
+    body{
+        background-color: red;
+    };
+    .mobile{
+        display: block;
+    }
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+  }
+  
+  @media (min-width: 640px) and (max-width:1023px){
+    /*
+      - show tablet div
+      - hide mobile and desktop divs
+      - change background color
+    */
+    body{
+        background-color: green;
+    };
+    
+    .tablet{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /*
+      - show desktop div
+      - hide mobile and tablet divs
+      - change background color
+    */
+    body{
+        background-color: blue;
+    };
+    
+    .desktop{
+        display: block;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+  }

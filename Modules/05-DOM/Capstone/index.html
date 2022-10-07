@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="logo__container">
+        <a href="#">
+          <svg
+            class="user__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <button class="mobile__navigation">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu__icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
+      <nav class="navigation__container">
+        <ol class="navigation__links">
+          <li class="link__item">
+            <span class="highlight">01.</span>
+            <a class="link__name underline" href="/portfolio-website/#about"
+              >About</a
+            >
+          </li>
+          <li class="link__item">
+            <span class="highlight">02.</span>
+            <a
+              class="link__name underline"
+              href="/portfolio-website/#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="link__item">
+            <span class="highlight">03.</span>
+            <a class="link__name underline" href="/portfolio-website/#project"
+              >Project</a
+            >
+          </li>
+          <li class="link__item">
+            <span class="highlight">04.</span>
+            <a class="link__name underline" href="/portfolio-website/#contact"
+              >Contact</a
+            >
+          </li>
+        </ol>
+
+        <div>
+          <a class="resume__link" href="portfolio-website/resume.pdf">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="home__section">
+        <h4 class="home__title highlight">Hi, my name is</h4>
+        <h2 class="home__username">Lim Jun Hao</h2>
+        <h3 class="home__subtitle">I build things</h3>
+
+        <p class="home__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          facere, officia ipsa quibusdam earum debitis aperiam odit maiores
+          autem vitae ipsum ex recusandae, totam qui explicabo. Aspernatur eaque
+          cumque ut?
+        </p>
+
+        <div class="home__cta">
+          <a class="cta__link" href="/portfoliowebsite/#contact">Contact me!</a>
+        </div>
+      </section>
+      
+      <script src="./app.js"></script>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+/* Completed Todo */
+[done] {
+    color: green;
+    text-decoration:line-through ;
+}
+
+
+
+/* Deleted Todo */
+.deleted__todo{
+    display: none;
+}
+
+.delete__container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /* height: fit-content; */
+    max-height: 200px;
+    width: 480px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.delete{
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
+
+#deletedList{
+    text-align: center;
+}
