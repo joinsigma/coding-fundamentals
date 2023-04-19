@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Capstone 1</title>
+  <style>
+    body {
+      margin-left: 50px;
+    }
+    section {
+      margin: 20px 0 20px 0;
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 2px;
+      text-align: center;
+    }
+    th, tr, td {
+      border: 3px solid rgb(187, 184, 184);
+      padding: 5px;
+    }
+    th {
+      background-color: rgb(141, 182, 182);
+    }
+    form {
+      border: 1px solid black;
+      width: fit-content;
+      padding: 20px;
+    }
+    form div {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+  </header>
+    
+  <section>
+     <div>
+      <h3>Introduction</h3>
+      <p>A <em>glutton</em>. Period.</p>
+     </div>
+    <div>
+      <h3>Daily Routine</h3>
+      <ol>
+        <li>Eat</li>
+        <li>Play</li>
+        <li>Sleep</li>
+      </ol>  
+    </div>
+  </section>
+
+  <section>
+    <h3>Upcoming Events</h3>
+    <table>
+      <caption>Foodie Hunting Trips</caption>
+      <th scope="col">Food</th>
+      <th scope="col">Date</th>
+      <tr>
+        <td>Pizza</td>
+        <td>1 Apr 2030</td>
+      </tr>
+      <tr>
+        <td>Pasta</td>
+        <td>1 Apr 2031</td>
+      </tr>
+      <tr>
+        <td>Pudding</td>
+        <td>1 Apr 2032</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h3>Join the next Foodie Trip</h3>
+    <form action="/join" method="GET">
+      <div>
+        <label for="name">Name:</label>
+        <input name="name" type="text" required />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input name="email" type="email" required />
+      </div>
+      <div>
+        <label for="tel">Phone:</label>
+        <input name="tel" type="tel" />
+      </div>
+      <div>
+        <h4>RSVP Events:</h4>
+        <input name="pizza" type="checkbox" />
+        <label for="pizza">Pizza</label>
+        <input name="pasta" type="checkbox" />
+        <label for="pasta">Pasta</label>
+        <input name="pudding" type="checkbox" />
+        <label for="pudding">Pudding</label>
+      </div>
+      <input type="submit" value="Join" />
+      <input type="reset" value="Reset form" />
+    </form>
+  </section>
+
+</body>
+</html>
