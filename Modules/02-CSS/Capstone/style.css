@@ -1,0 +1,46 @@
+body {
+  /* set default background color */
+  background-color: red;
+}
+
+.tablet, .desktop {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  /*
+    - show tablet div
+    - hide mobile and desktop divs
+    - change background color
+  */
+  .tablet {
+    display: block;
+  }
+
+  .mobile, .desktop {
+    display: none;
+  }
+
+  body {
+    background-color: greenyellow;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*
+    - show desktop div
+    - hide mobile and tablet divs
+    - change background color
+  */
+  .desktop {
+    display: block;
+  }
+
+  .mobile, .tablet {
+    display: none;
+  }
+
+  body {
+    background-color: blue;
+  }
+}
