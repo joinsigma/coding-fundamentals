@@ -1,0 +1,29 @@
+.menu {    
+  width: fit-content;
+}
+
+.submenu {    
+  display: none;
+}
+
+/* select all child elements */
+.submenu > * {
+  padding: 10px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.menu:hover .submenu {    
+  /* Show submenu on hover */
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: #9BA4B5;
+}
+
+.submenu-item:hover {
+  cursor: pointer;
+  background-color: #6e7e9c;
+}
