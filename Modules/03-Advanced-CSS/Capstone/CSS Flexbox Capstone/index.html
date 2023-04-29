@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <script src="https://kit.fontawesome.com/f0668889bf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+  <nav class="section">
+    <div>
+      <span class="fa-solid fa-house fa-lg icons"></span>
+      <ul>
+        <li><a href="./page.html" target="_blank">About</a></li>
+        <li><a href="./page.html" target="_blank">Partners</a></li>
+        <li><a href="./page.html" target="_blank">News</a></li>
+      </ul>
+    </div>
+    <a href="./page.html" target="_blank">Register</a>
+  </nav>
+  
+  <main class="section">
+    <h1>Get in touch</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ducimus ut quaerat molestias blanditiis minus laudantium qui id, et architecto expedita rem at autem reiciendis quod enim quisquam, explicabo sapiente.</p>
+  </main>
+
+  <section>
+    <article class="contact section">
+      <h3>Contact Information</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est provident ad, praesentium cum rem doloremque sapiente, reiciendis culpa quam velit commodi saepe esse molestias quas rerum, maiores totam assumenda amet?</p>
+      <p><span class="fas fa-phone fa=lg icons"></span>1234567890</p>
+      <p><span class="fas fa-envelope fa-lg icons"></span><a href="mailto:randomemail@example.com">randomemail@example.com</a></p>
+      <ul class="social-links">
+        <li><a href="./page.html" target="_blank"><span class="fab fa-facebook fa-lg icons"></span></a></li>
+        <li><a href="./page.html" target="_blank"><span class="fab fa-instagram fa-lg icons"></span></a></li>
+        <li><a href="./page.html" target="_blank"><span class="fab fa-twitter fa-lg icons"></span></a></li>
+        <li><a href="./page.html" target="_blank"><span class="fab fa-github fa-lg icons"></span></a></li>
+      </ul>
+    </article>
+    <article class="section form">
+      <form action="./submit.html" target="_blank" method="GET">
+        <h3>Send us a message</h3>
+  
+        <div class="flex-item1">
+
+          <div class="item">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" required>
+            
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" required>
+          </div>
+
+          <div class="item">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone">
+          </div>
+            
+        </div>
+
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" required>
+        <label for="message">Message</label>
+        <textarea name="message" rows="10" cols="30" required></textarea>
+        <div class="flex-item2">
+          <input type="submit" value="Submit" class="btn">
+          <input type="reset" value="Reset form" class="btn">
+        </div>
+        </div>
+      </form>
+    </article>
+  </section>
+</body>
+</html>
