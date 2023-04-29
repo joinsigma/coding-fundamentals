@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  border: 1px solid grey;
+  padding: 50px;
+  margin: 50px;
+}
+
+article {
+  display: flex;
+  column-gap: 10px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.star {
+  color: yellow;
+}
+
+p {
+  margin-top: 10px;
+}
