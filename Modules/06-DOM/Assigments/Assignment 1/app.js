@@ -19,9 +19,9 @@ function hideNotification() {
 
 document.addEventListener("click", (event) => {
   /* if the event.target is the close button OR
-    if the event.target closest parent is not the notificationDIv (i.e outside of the notificationDIv) AND event.target is not the add button
+    if the event.target's parent is not the notificationDIv (i.e outside of the notificationDIv) AND event.target is not the add button
   */
-  if (event.target.matches(".icon__close") || !event.target.closest(".notification") && !event.target.matches(".add__button")
+  if (event.target.matches(".icon__close") || event.target.parentNode != notificationDiv && !event.target.matches(".add__button")
   ) {
     hideNotification() 
   }
