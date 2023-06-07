@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Assignment 2 - Github User Search</title>
+  <style>
+    body {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    section {
+      margin: 10px 0 10px 0;
+      border: 1px solid grey;
+      display: flex;
+      align-items: center;
+    }
+    .hide {
+      opacity: 0;
+    }
+    #profile-image {
+      border-radius: 50%;
+      width: 20%;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <form>
+      <input type="text" placeholder="Search user" id="user-input">
+      <input type="submit" value="Get user" id="btn">
+    </form>
+    <section>
+      <img src="" alt="profile-image" id="profile-image" class="hide">
+      <article class="hide">
+        <h2 id="username">Name</h2>
+        <p id="desc">gfnfg</p>
+        <p>Joined at: <span id="joined-date"></span></p>
+      </article>
+    </section>
+  </main>
+  <script>
+    const form = document.querySelector("form");
+    const searchInput = document.querySelector("#user-input");
+    const btn = document.querySelector("#btn");
+    const profilePic = document.querySelector("#profile-image");
+    const username = document.querySelector("#username");
+    const description = document.querySelector("#desc");
+    const dateJoined = document.querySelector("#joined-date");
+    const descDiv = document.querySelector("article");
+
+    const GITHUB_USER_API = "https://api.github.com/users"
+
+    async function getUser(username) {
+      const response = await fetch(`${GITHUB_USER_API}/${username}`);
+      const data = await response.json();
+      return data;
+    }
+
+    btn.addEventListener("click", displayUser);
+
+    async function displayUser(e) {
+      e.preventDefault();
+      const userName = searchInput.value;
+      form.reset();
+      const user = await getUser(userName);
+      if (user?.login) {
+        profilePic.classList.remove("hide");
+        descDiv.classList.remove("hide");
+        username.textContent = user.name;
+        description.textContent = user.bio;
+        dateJoined.textContent = displayDate(user["created_at"]);
+        profilePic.src = user["avatar_url"];
+      } else {
+        console.log("no user found");
+        profilePic.classList.add("hide");
+        descDiv.classList.add("hide");
+      }
+    }
+
+    function displayDate(dateInUTC) {
+      const date = new Date(dateInUTC);
+      const dd = date.toLocaleString("default", {day: "2-digit"});
+      const month = date.toLocaleString('default', { month: 'long' });
+      const yyyy = date.toLocaleString('default', { year: 'numeric' });
+      return `${dd} ${month} ${yyyy}`;
+    }
+  </script>
+</body>
+</html>

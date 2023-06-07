@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Assingment 3 - GitHub Gist</title>
+</head>
+<body>
+  <h1>Gist API</h1>
+  <section>
+    <h1>Name: <span id="name">name</span></h1>
+    <p>Age: <span id="age">age</span></p>
+    <ul id="hobbies"></ul>
+    <button id="btn">Fetch Me</button>
+  </section>
+  <script>
+    const name = document.querySelector("#name");
+    const age = document.querySelector("#age");
+    const hobbies = document.querySelector("#hobbies");
+    const btn = document.querySelector("#btn");
+
+    const GIST_API = "https://gist.githubusercontent.com/lyntee/f54a382ae440ea368c7ce5c15bc90b2d/raw/0c6b9973105f48cc3ecb61f8a0690e30671e7a91/details.json"
+
+    btn.addEventListener("click", displayData);
+
+    async function getData() {
+      const response = await fetch(GIST_API);
+      const data = await response.json();
+      return data;
+    }
+
+    async function displayData() {
+      const data = await getData();
+      name.textContent = data.name;
+      age.textContent = data.age;
+      for (const hobby of data.hobbies) {
+        const li = document.createElement("li");
+        li.textContent = hobby;
+        hobbies.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>

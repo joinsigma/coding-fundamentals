@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Assignment 1 - Random Quote Generator</title>
+  <style>
+    body {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    section {
+      border: 1px solid grey;
+    }
+    article, button {
+      padding: 20px;
+      margin: 20px;
+    }
+    .btn {
+      background-color: rgb(190, 193, 196);
+    }
+    button {
+      color: #fff;
+      background-color: rgb(17, 80, 197);
+      border: 3px solid lightblue;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <article>
+      <h3 id="quote">random quote</h3>
+      <p>-<span id="author">author name</span></p>
+    </article>
+    <div class="btn">
+      <button>New Quote</button>
+    </div>
+  </section>
+  <script>
+    const quote = document.querySelector("#quote");
+    const author = document.querySelector("#author");
+    const btn = document.querySelector("button");
+
+    const QUOTE_API = "https://api.quotable.io/random";
+
+    async function getRandomQuote() {
+      const response = await fetch(QUOTE_API);
+      const data = await response.json();
+      return data;
+    }
+
+    btn.addEventListener("click", changeQuote);
+
+    async function changeQuote() {
+      const randomQuote = await getRandomQuote();
+      quote.textContent = randomQuote.content;
+      author.textContent = randomQuote.author;
+    }
+  </script>
+</body>
+</html>
