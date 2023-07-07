@@ -1,0 +1,10 @@
+1. A
+2. B
+3. D
+4. A, B and C
+5. c
+6. A, B, C and D
+7. A
+8. D
+9. C
+10. B

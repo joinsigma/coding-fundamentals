@@ -1,0 +1,29 @@
+1. For automation purposes. To repeat a same set of instruction an finite number of times. There are a few types of loop:
+a) For loop
+initialise iterator (i), set the number of times to loop (n), condition after each loop (i++, increase iterator by one each loop)
+for(let i=0; i<n; i++) {
+  // do something
+}
+e.g. const arr = ["cats", "dogs", "monkeys"]
+logs each item of arr i.e cats (in the first loop), dogs (in the second loop) and monkeys (in the last loop)
+for(const item of arr) {
+  console.log(item);
+}
+b) do...while loop
+run the loop contents once before accessing the condition
+do {
+  //contents
+} while (condition)
+c) while loop 
+repeat the loop for infinite times until condition is false.
+while (true) {
+  // do something
+}
+
+2. console.log() logs whatever the user types in the log() function as arguments, can be used anywhere in the code whereas return is usually used in a function as an ending statement to return a value/function etc. After return keyword is used, any statments after it will not be executed. However, multiple console.log() can be executed.
+
+3. truthy value are values that output true in JS vice versa falsy values are values that output false. Some examples of truthy values includes: 1, true, 3<5 etc. Some examples of falsy values includes: 0, false, "", null, undefined etc.
+
+4. The internet is multiple computers (i.e. servers) around the world connected with very long and thick wires. Information can be send to each other through the internet protocols (IP). An user (a computer/device) with an IP address sends a request to the backend server (another computer/device also with an IP address). The backend server then response with the data requested to the user IP address. 
+
+5. A website typically consists of 3 files: HTML, CSS and JS. HTML are for content, structure of page. CSS are for styling purposes. JS is for dynamic usages, i.e. add events listeners (click events etc), manipulating the DOM, retrieving dynamic data from server/API etc.
