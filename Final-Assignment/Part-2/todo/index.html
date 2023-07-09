@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Assignment - Todo App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <h1>Todo List</h1>
+    <form class="task-input">
+      <div>
+        <label for="desc">Task:</label>
+        <input type="text" placeholder="Enter new task..." >
+      </div>
+      <div>
+        <label for="importance">Level of importance:</label>
+        <input id="importance" type="number" min="1" max="5" placeholder="Enter 1 to 5" >
+      </div>
+      <input type="submit" value="Add" class="buttons">
+    </form>
+    <form class="radio-inputs">
+      <div>
+        <input type="radio" id="sort" name="choices">
+        <label for="sort">Click to sort from most important</label>
+      </div>
+      <div>
+        <input type="radio" id="show-deleted" name="choices">
+        <label for="show-deleted-todos">Show deleted todos</label>
+      </div>
+      <div>
+        <input type="radio" id="undo" name="choices">
+        <label for="undo">Undo Delete</label>
+      </div>
+      <div>
+        <input type="radio" id="clear" name="choices">
+        <label for="clear">Clear list</label>
+      </div>  
+    </form>
+    <section class="tasks-list"></section>
+  </main>
+  <article class="legend">
+    <h3>Level of importance:</h3>
+    <p>1: Not at all Important</p>
+    <p>2: Low Importance</p>
+    <p>3: Slightly Important</p>
+    <p>4: Moderately Important</p>
+    <p>5: Extremely Important</p>
+  </article>
+  <script src="./app.js"></script>
+</body>
+</html>
